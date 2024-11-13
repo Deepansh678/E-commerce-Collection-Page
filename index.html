@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="heading">
+        <h1>All Collection</h1>
+        <select id="sortOptions">
+        <option value="default">Sort by Price</option>
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
+      </select>
+    </div>
+    
+     <button id="loadProducts">
+    <span class="button-text">Load Products</span>
+      <div class="loading-dots"> 
+       <span class="dot"></span>
+       <span class="dot"></span>
+       <span class="dot"></span>
+     </div> 
+    </button>
+  </header>
+  <main>
+    <section id="productContainer" class="products-grid">
+    </section>
+    <p id="errorMessage" class="hidden">Failed to load products. Please try again.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
